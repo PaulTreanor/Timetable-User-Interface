@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import Timetable from './components/Timetable';
+import Nav from './components/Nav';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="overflow-class">
+      <Header /> 
+      <div class="main">
+        <div class="container-fluid">
+          <div class="row"> 
+            <Sidebar/>
+            <div class="col-md-9 p-0 m-0">
+              <Nav />
+              <Timetable />
+            </div>
+
+
+
+          </div>
+        </div>
+      </div> 
+    </div>  
   );
 }
 

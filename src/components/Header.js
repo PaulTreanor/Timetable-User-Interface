@@ -15,10 +15,7 @@ class Header extends React.Component {
             <div class="header-title">
                 DCU Clubs and Socs Timetable
             </div>
-            
         </nav>
-        
-  
     );
   }
 }

@@ -26,6 +26,14 @@ html,body {
 	padding-left: 2vw;
 }
 
+.dropdown-toggle:active{
+	transform: translateY(4px);
+}
+
+.col-sm:active{
+	transform: translateY(4px);
+}
+
 /*not the top part */ 
 
 .main {
@@ -43,6 +51,10 @@ html,body {
 	margin: auto;
 	margin-top:20px;
 	padding-bottom: 20px;
+}
+
+.searchy:active {
+	transform: translateY(4px);
 }
 
 @media only screen and (min-width: 768px) {      /*mobile first design, media query makes it look nice on desktop too */
@@ -75,6 +87,14 @@ html,body {
 	padding: 0;
 	margin: 0;
 
+}
+
+.table-head {
+	background-color:lightgray;
+}
+
+.hours {
+	background-color:lightgray;
 }
 
 /*--------------Artist Tiles Modal CSS ----------------------------------------*/

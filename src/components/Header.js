@@ -11,7 +11,7 @@ class Header extends React.Component {
     return (
         
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <img class="dcu-logo d-none d-lg-block" src={logo}/>  
+            <img class="dcu-logo d-none d-lg-block" alt="dcu logo" src={logo}/>  
             <div class="header-title">
                 DCU Clubs and Socs Timetable
             </div>

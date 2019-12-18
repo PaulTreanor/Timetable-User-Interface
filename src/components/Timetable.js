@@ -39,7 +39,7 @@ class Timetable extends React.Component {
                   <td></td>
                 </tr>
                 <tr>
-                  <th scope="row">12.00</th>
+                  <th scope="row">12:00</th>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -47,7 +47,7 @@ class Timetable extends React.Component {
                   <td></td>
                 </tr>
                 <tr>
-                  <th scope="row">14.00</th>
+                  <th scope="row">14:00</th>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -55,7 +55,7 @@ class Timetable extends React.Component {
                   <td></td>
                 </tr>
                 <tr>
-                  <th scope="row">16.00</th>
+                  <th scope="row">16:00</th>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -63,7 +63,7 @@ class Timetable extends React.Component {
                   <td></td>
                 </tr>
                 <tr>
-                  <th scope="row">18.00</th>
+                  <th scope="row">18:00</th>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -71,7 +71,7 @@ class Timetable extends React.Component {
                   <td></td>
                 </tr>
                 <tr>
-                  <th scope="row">20.00</th>
+                  <th scope="row">20:00</th>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -79,7 +79,7 @@ class Timetable extends React.Component {
                   <td></td>
                 </tr>
                 <tr>
-                  <th scope="row">22.00</th>
+                  <th scope="row">22:00</th>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -89,7 +89,6 @@ class Timetable extends React.Component {
               </tbody>
             </table>
           </div>
-
     );
   }
 }

@@ -12,22 +12,22 @@ class Nav extends React.Component {
                    }
   }
 
+ 
 
   selectWeek(input){
     this.setState({weekNumber:input});
+    this.props.handler(input)
   }
 
-  handleClick(item) {
-    console.log(item);
-  }
-
-  triggerAddTripState = () => {
+  TriggerAddLogInState = () => {
     this.setState({
       ...this.state,
       isEmptyState: false,
-      isAddTripState: true
+      isAddLogInState: true
     })
   }
+
+  
   render() {
   
     return (
@@ -39,6 +39,7 @@ class Nav extends React.Component {
                   week {this.state.weekNumber}
                   </button>
                   <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  
                   {this.state.weekList.map(item => {
                       return(
                         <button key={item} className="dropdown-item" onClick = {() => this.selectWeek(item)}>Week {item}</button>                        
@@ -48,8 +49,8 @@ class Nav extends React.Component {
                 </div>
               </div>
               <div class="col-sm-6 text-center">
-                {this.state.isEmptyState && <EditButton addTrip={this.triggerAddTripState} />}
-                {this.state.isAddTripState && <LogIn />}
+                {this.state.isEmptyState && <EditButton addTrip={this.TriggerAddLogInState} />}
+                {this.state.isAddLogInState && <LogIn/>}
               </div>
             </div>
           </div>

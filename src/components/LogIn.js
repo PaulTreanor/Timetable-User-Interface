@@ -25,6 +25,7 @@ class LogIn extends React.Component {
                 </div>
             </div>
             <div className= "col-sm">
+                
                 <button type="submit" class="btn btn-primary m-0">Login</button>
             </div>
         </div>

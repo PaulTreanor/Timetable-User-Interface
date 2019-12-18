@@ -6,6 +6,7 @@ import Nav from './components/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
+import MainArea from './components/MainArea';
 
 
 function App() {
@@ -17,8 +18,7 @@ function App() {
           <div class="row"> 
             <Sidebar/>
             <div class="col-md-9 p-0 m-0">
-              <Nav />
-              <Timetable />
+              <MainArea/>
             </div>
           </div>
         </div>

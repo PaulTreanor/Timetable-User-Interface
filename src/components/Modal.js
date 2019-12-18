@@ -28,7 +28,7 @@ function MyVerticallyCenteredModal(props) {
   
   function MyModal() {
     const [modalShow, setModalShow] = React.useState(false);
-  
+    
     return (
         
       <td className="coloured-cell">

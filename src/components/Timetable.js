@@ -1,11 +1,14 @@
 import React from 'react';
 import Modal from './Modal';
+import Nav from './Nav';
 
 class Timetable extends React.Component {
 	constructor(props) {
 		super(props);
 		
   }
+
+
   render() {
   
     return (
@@ -32,9 +35,9 @@ class Timetable extends React.Component {
                 </tr>
                 <tr>
                   <th scope="row">10:00</th>
-                  <Modal />
+                  {this.props.week == "12" && <Modal />}                 
                   <td></td>
-                  <td></td>
+                  <td>{this.props.name}</td>
                   <td></td>
                   <td></td>
                 </tr>

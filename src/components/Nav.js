@@ -5,7 +5,11 @@ import LogIn from './LogIn';
 class Nav extends React.Component {
 	constructor(props) {
     super(props)
-    this.state = { isEmptyState: true }
+    this.state = {
+       isEmptyState: true,
+       weekNumber: "",
+       weekList: [1,2,3,4,5,6,7,8,9,10,11,12]
+                   }
   }
 
   triggerAddTripState = () => {
@@ -23,21 +27,14 @@ class Nav extends React.Component {
               <div class="col-sm-6 text-center">
                 <div class="dropdown">
                   <button class="btn btn-primary dropdown-toggle mb-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    week 12
+                  week {this.state.weekNumber}
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Week 1</a>
-                    <a class="dropdown-item" href="#">Week 2</a>
-                    <a class="dropdown-item" href="#">Week 3</a>
-                    <a class="dropdown-item" href="#">Week 4</a>
-                    <a class="dropdown-item" href="#">Week 5</a>
-                    <a class="dropdown-item" href="#">Week 6</a>
-                    <a class="dropdown-item" href="#">Week 7</a>
-                    <a class="dropdown-item" href="#">Week 8</a>
-                    <a class="dropdown-item" href="#">Week 9</a>
-                    <a class="dropdown-item" href="#">Week 10</a>
-                    <a class="dropdown-item" href="#">Week 11</a>
-                    <a class="dropdown-item" href="#">Week 12</a>
+                  {this.state.weekList.map(item => {
+                      return(
+                        <a class="dropdown-item" href="#">Week {item}</a>                        
+                      )
+                    })}
                   </div>
                 </div>
               </div>

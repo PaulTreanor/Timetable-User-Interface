@@ -20,9 +20,6 @@ function App() {
               <Nav />
               <Timetable />
             </div>
-
-
-
           </div>
         </div>
       </div> 
